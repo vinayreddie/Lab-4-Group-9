@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAB4 Table</title>
+    <link rel="stylesheet" type="text/css" href="table.css">
+
+</head>
+
+<body>
+    <table>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+        <p><a href="index.html">Index Page</a></p>
+        <Script>
+            function addRow() {
+
+                var Photo = document.getElementById('Photo').value;
+                var First_Name = document.getElementById('First_Name').value;
+                var Last_Name = document.getElementById('Last_Name').value;
+                var Job = document.getElementById('Job').value;
+                var Salary = document.getElementById('Salary').value;
+
+
+                var table = document.getElementsByTagName('table')[1];
+
+                var newRow = table.insertRow(table.rows.length);
+
+                var cel1 = newRow.insertCell(0);
+                var cel2 = newRow.insertCell(1);
+                var cel3 = newRow.insertCell(2);
+                var cel4 = newRow.insertCell(3);
+                var cel5 = newRow.insertCell(4);
+
+
+
+                cel1.innerHTML = Photo;
+                cel2.innerHTML = First_Name;
+                cel3.innerHTML = Last_Name;
+                cel4.innerHTML = Job;
+                cel5.innerHTML = Salary;
+                s
+
+
+            }
+        </script>
+        </head>
+
+        <body>
+
+
+            Photo: <input type="file" name="Photo" id="Photo" onchange="preview_2(this)" alt="" /><br/><br/> First Name: <input type="text" name="First_Name" id="First_Name" /><br/><br/> Last Name: <input type="text" name="Last_Name" id="Last_Name" /><br/><br/>            Job: <input type="text" name="Job" id="Job" /><br/><br/> Salary: <input type="text" name="Salary" id="Salary" /><br/><br/>
+            <button onclick="addRow();">Add Row</button><br/><br/>
+            <table id="table" border="1">
+
+
+
+                <tr>
+                    <th>Photo</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Job</th>
+
+
+
+                </tr>
+
+                <tr>
+                    <td><img src="vinay.jpg" alt="vinay" width="50" height="50"></td>
+                    <td>Vinay </td>
+                    <td>Reddy</td>
+                    <td>Student</td>
+                    <td>$10000</td>
+
+                </tr>
+                <tr>
+                    <td><img src="prashanth.jpg" alt="prashanth" width="50" height="50"></td>
+                    <td>Prashanth</td>
+                    <td>Yaddanapudi</td>
+                    <td>Student</td>
+                    <td>$10000</td>
+
+                </tr>
+                <tr>
+                    <td><img src="anisha.jpg" alt="anisha" width="50" height="50"></td>
+                    <td>Anisha</td>
+                    <td>Hiwale</td>
+                    <td>Student</td>
+                    <td>$10000</td>
+
+                </tr>
+
+
+            </table>
+
+
+</html>
